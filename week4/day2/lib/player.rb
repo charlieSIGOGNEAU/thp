@@ -19,12 +19,11 @@ class Player
     puts "le joueur #{@name} attaque le joueur #{player2.name}"
     dommage_inflige = compute_damage
     puts "il lui inflige #{dommage_inflige} points de dommages"
-    player2.gets_damage(compute_damage)
+    player2.gets_damage(dommage_inflige)
   end
 
   def compute_damage
     return rand(1..6)
   end
-
 
 end
